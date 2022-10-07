@@ -21,7 +21,7 @@ function drawBox() {
     context.stroke();
 
     //lijn
-    context.lineWidth=5;
+    context.lineWidth=4;
     context.strokeStyle="red";
 
     context.beginPath();
