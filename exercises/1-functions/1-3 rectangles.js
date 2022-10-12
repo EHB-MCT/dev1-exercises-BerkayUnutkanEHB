@@ -10,11 +10,11 @@ drawRectangle();
 function drawRectangle() {
     //vierkant
     context.beginPath();
-    context.rect(350, 75, 25, 25);
+    context.rect(320, 50, 30, 30);
     context.fill();
     context.stroke();
     context.beginPath();
-    context.rect(50, 375, 25, 25);
+    context.rect(50, 320, 30, 30);
     context.fill();
     context.stroke();
 
@@ -22,35 +22,33 @@ function drawRectangle() {
     context.strokeStyle="red";
 
     context.beginPath();
-    context.rect(50, 50, 175, 175);
+    context.rect(50, 50, 150, 150);
     context.stroke();
 
     context.beginPath();
-    context.rect(225, 250, 175, 175);
-    context.stroke();
-
-    context.beginPath();
-    context.rect(125, 150, 175, 175);
+    context.rect(125, 125, 150, 150);
     context.fill();
     context.stroke();
 
     context.beginPath();
-    context.rect(300, 100, 50, 50);
+    context.rect(275, 80, 45, 45);
     context.stroke();
 
     context.beginPath();
-    context.rect(75, 325, 50, 50);
+    context.rect(80, 275, 45, 45);
     context.stroke();
-    
-    
 
-    
+    context.beginPath();
+    context.rect(200, 200, 150, 150);
+    context.stroke();
 
-    
 
-    
 
-    
+
+
+
+
+
 
 
 }
