@@ -20,3 +20,9 @@ export function rgb(r,g,b) {
     let rgb = "rgb(" + r + "," + g +"," + b + ")";
     return rgb;
 }
+
+function strokeCircle (x, y, radius){
+    context.beginPath();
+    context.ellipse(x,y,radius,radius,0,0, Math.PI*2);
+    context.stroke();
+}
