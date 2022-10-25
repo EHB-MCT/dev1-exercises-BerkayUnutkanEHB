@@ -13,7 +13,7 @@ function drawShrinkingBars() {
     let i = 0;
     while (i <= 14) {
         let gray = ;
-        context.fillStyle = Utils.rgb(gray, gray, gray);
+        context.fillStyle = Utils.rgb(i, i, i);
         context.fillRect(, , , );
         i++;
     }

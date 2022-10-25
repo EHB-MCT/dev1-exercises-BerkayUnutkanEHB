@@ -21,6 +21,6 @@ function drawConcentricCircles() {
         //and has the following parameters: x,y,radius
 
         Utils.strokeCircle(200, 200, 15*i);
-        i++;
+        i+=1;
     }
 }

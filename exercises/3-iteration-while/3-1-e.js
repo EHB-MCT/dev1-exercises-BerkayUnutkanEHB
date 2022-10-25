@@ -14,11 +14,12 @@ function draw() {
 
 function drawDiagonalGrid() {
     let i = 0;
-    let offset = 75;
-    let spacing = 25;
     while (i < 6) {
-        Utils.drawLine(75, offset + (spacing * i), 325, offset + (spacing*i));
-        Utils.drawLine(75 + (spacing*i),75, 75 + (spacing*i),325);
-        i++ ;
+        let spacing = 30;
+        let x = 50;
+        let y = 200;
+        Utils.drawLine(x+spacing*i, y+spacing*i, y+spacing*i, x+spacing*i);
+        Utils.drawLine(y-spacing* i, x+ spacing*i, 350-spacing*i, y+spacing*i);
+        i+=1 ;
     }
 }

@@ -14,8 +14,8 @@ function draw() {
 
 function drawSunBeams() {
     let i = 0;
-    let step = 50;
-    let amount = 300/step;
+    let step = 10;
+    let amount = 320/step;
     while (i < amount ) {
         Utils.drawLine(50, 50, 350, 50 + (i*step));
         Utils.drawLine(50,50, 50+ (i*step),350);
