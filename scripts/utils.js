@@ -9,20 +9,39 @@ import context from "./context.js";
  * @param {Number} y2  Y coordinate of the end point
  */
 
-export function drawLine(x1, y1, x2, y2){
-    context.beginPath();
+ export function drawLine(x1, y1, x2, y2) {
     context.moveTo(x1, y1);
     context.lineTo(x2, y2);
     context.stroke();
 }
-
 export function rgb(r,g,b) {
-    let rgb = "rgb(" + r + "," + g +"," + b + ")";
+    let rgb = "rgb(" + r + "," + g + "," + b + ")"; 
     return rgb;
 }
 
-function strokeCircle (x, y, radius){
+export function strokeCircle(x, y, radius) {
+    strokeEllipse(x, y, radius, radius);
+}
+
+export function fillAndStrokeEllipse(x, y, radius) {
+    fillEllipse(x,y, radius, radius);
+    strokeEllipse(x, y, radius, radius);
+
+}
+
+function fillEllipse(x, y, rX, rY){
     context.beginPath();
-    context.ellipse(x,y,radius,radius,0,0, Math.PI*2);
-    context.stroke();
+    context.ellipse(x,y, rX, rY,0, 0, Math.PI2);
+    context.fill();
+}
+
+function strokeEllipse(x, y, rX, rY) {
+context.beginPath();
+context.ellipse(x,y, rX, rY,0, 0, Math.PI*2);
+context.stroke();
+}
+
+export function hsla( h,s,l,a) {
+    return "hsla(" + h + "," + s +"%,"+ l + "%," + a + ")";
+
 }
